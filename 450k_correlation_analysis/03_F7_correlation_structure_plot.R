@@ -139,7 +139,7 @@ numbers.df$correlation.band <- factor(numbers.df$correlation.band,
                                                "0.9 to 1"))
 
 # create plot:
-jpeg(filename ="/Users/sw14321/Documents/PhD/MainProject/Full450k_output/F7_numberofcorrelationsperband.jpg", width = 7, height = 5, units = 'in', res=300)
+jpeg(filename ="path/to/F7_numberofcorrelationsperband.jpg", width = 7, height = 5, units = 'in', res=300)
 ggplot(numbers.df, aes(x=correlation.band, y=Number)) + 
   geom_bar(stat="identity", position=position_dodge(), fill="#238A8DFF") +
   scale_fill_viridis(discrete = T, begin=0.2, end=0.6)+
